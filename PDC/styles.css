@@ -103,13 +103,15 @@
 	width: 279px;
 }
 
-.switch_2opt {
+	/* 2 Option Switch */
+
+#ptSwitchContainer .switch_2opt {
 	overflow: hidden;
 	height: 100%;
 	width: 100%;
 }
 
-.switch_2opt input{
+#ptSwitchContainer .switch_2opt input{
   position: absolute;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -118,7 +120,7 @@
   overflow: hidden;
 }
 
-.switch_2opt label {
+#ptSwitchContainer .switch_2opt label {
 	background-color: #E0FFFF;
 	border: 1px solid #007AFF;
 	box-sizing: border-box;
@@ -136,33 +138,34 @@
 	width: 50%;
 }
 
-.switch_2opt label:hover {
+#ptSwitchContainer .switch_2opt label:hover {
 	cursor: pointer;
 }
 
-.switch_2opt input:checked + label {
+#ptSwitchContainer .switch_2opt input:checked + label {
 	background-color: #007AFF;
 	color: #E0FFFF;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
 
-.switch_2opt label:first-of-type {
+#ptSwitchContainer .switch_2opt label:first-of-type {
 	border-radius: 4px 0 0 4px;
 }
 
-.switch_2opt label:last-of-type {
+#ptSwitchContainer .switch_2opt label:last-of-type {
 	border-radius: 0 4px 4px 0;
 }
 
-.switch_3opt {
+	/* 3 Option Switch */
+
+#ptSwitchContainer .switch_3opt {
 	overflow: hidden;
 	height: 100%;
 	width: 100%;
-
 }
 
-.switch_3opt input{
+#ptSwitchContainer .switch_3opt input{
   position: absolute;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -171,7 +174,7 @@
   overflow: hidden;
 }
 
-.switch_3opt label {
+#ptSwitchContainer .switch_3opt label {
 	background-color: #E0FFFF;
 	border: 1px solid #007AFF;
 	box-sizing: border-box;
@@ -190,22 +193,22 @@
 	width: calc(100% / 3);
 }
 
-.switch_3opt label:hover {
+#ptSwitchContainer .switch_3opt label:hover {
 	cursor: pointer;
 }
 
-.switch_3opt input:checked + label {
+#ptSwitchContainer .switch_3opt input:checked + label {
 	background-color: #007AFF;
 	color: #E0FFFF;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
 
-.switch_3opt label:first-of-type {
+#ptSwitchContainer .switch_3opt label:first-of-type {
 	border-radius: 4px 0 0 4px;
 }
 
-.switch_3opt label:last-of-type {
+#ptSwitchContainer .switch_3opt label:last-of-type {
 	border-radius: 0 4px 4px 0;
 }
 
@@ -214,39 +217,161 @@
  */
 
 #teamTable {
-	background-color: lightblue;
+	background-color: none;
 	margin: 1px 0 1px 0;
 	height: 960px;
 	width: 562px;
 }
 
+  /*Styling of PT Table header*/
+
 #teamTable table {
+	border: 1px solid #0099CC;
+	border-collapse: collapse;
+	height: 100%;
 	width: 100%;
 }
 
-#teamTable .row1 {
+#teamTable th {
+	background-color: #E6E6FA;
+	font-weight: normal;
+	font-size: 15px;
 	height: 4%;
+	width: 36%;
 }
 
-#teamTable .row2 {
+#teamTable th:first-child {
+	border-right: 1px solid #0099CC;
+	width: 28%; /*unless it is first column*/
+}
+
+#teamTable th:last-child {
+	border-left: 1px solid #0099CC;
+}
+
+	/* Styling of td cells 
+		a1	b1	c1
+		a2	b2	c2
+	*/
+
+#teamTable .a1 {
+	background-color: #E6E6FA;
+	border-top: 1px solid #0099CC;
+	border-right: 1px solid #0099CC;
+	font-size: 14px;
+	text-align: center;
 	height: 2%;
 }
 
-#teamTable .row3 {
-
+#teamTable .a2 {
+	background-color: #E6E6E6;
+	border-top: 1px solid #0099CC;
+	border-right: 1px solid #0099CC;
+	color: #007AFF;
+	cursor: pointer;
+	text-align: center;
+	height: 13%;
 
 }
 
-#teamTable .column1 {
-	width: 28%;
+#teamTable .b1 {
+	border-top: 1px solid #0099CC;
+	background-color: #E6E6FA;
+	font-size: 14px;
+	text-align: center;
+	height: 2%;
 }
 
-#teamTable .column2 {
-	width: 36%;
+#teamTable .b2 {
+	border-top: 1px solid #0099CC;
+	padding: 0px;
+	text-align: center;
+	height: 13%;
 }
 
-#teamTable .column3 {
-	width: 36%;
+	/* Styling of .b2 table elements*/
+
+#teamTable .b2 table {
+	border: none;
+}
+
+#teamTable .b2 tr:first-child td {
+	background-color: white;
+}
+
+#teamTable .b2 tr:nth-child(2) td {
+	background-color: #E6E6FA;
+}
+
+#teamTable .b2 tr:nth-child(3) td {
+	background-color: white;
+}
+
+#teamTable .b2 tr:last-child td {
+	background-color: #E6E6FA;
+} 
+
+#teamTable .b2 td {
+	height: 25%;
+	width: 25%;
+}
+
+#teamTable .b2 .input {
+	color: #4682B4;
+	-webkit-appearance: none;
+}
+
+#teamTable input {
+	border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+   	color: #4682B4;
+   	font-family: "Times New Roman", Times, serif;
+
+}
+
+#teamTable .b2 .latentcell {
+	color: #4682B4;
+	cursor: pointer;
+}
+
+#teamTable .c1 {
+	background-color: #F0F7FF;
+	border-top: 1px solid #0099CC;
+	border-left: 1px solid #0099CC;
+	font-size: 14px;
+	padding-left: 4px;
+	height: 2%;
+}
+
+#teamTable .c2 {
+	background-color: #F0F7FF;
+	border-left: 1px solid #0099CC;
+	text-align: center;
+	height: 13%;
+}
+
+/*
+ Overlay - Monster Select
+ */
+
+#searchOverlay {
+	background-color: white;
+	box-shadow: 5px 0px rgba(150, 150, 150, 0.8);
+	overflow-x: hidden;
+	top: 0;
+	left: 0;
+	position: fixed;
+	transition: 0.5s;
+	z-index: 1;
+	height: 100%;
+	width: 0;
 }
 
 /*

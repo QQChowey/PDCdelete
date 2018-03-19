@@ -36,7 +36,7 @@
 						<label for="playerA">A</label>
 
 						<input type="radio" id="playerB" name="switch_player" value="2" autocomplete="off" />
-						<label for="playerB">B</label>
+						<label for="playerB">C</label>
 					</div>
 				</form>
 			</span>
@@ -45,30 +45,280 @@
 		<div id="teamTable">
 			<table>
 				<thead>
-					<tr class="rowheader1">
-						<th class="column1">Team Badge &lt;o></th>
-						<th class="column2">Plus / Latents</th>
-						<th class="column3">Damage</th>
+					<tr>
+						<th>Team Badge &lt;o></th>
+						<th>Plus / Latents</th>
+						<th>Damage</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr class="rowheader2">
-						<th class="column1">Leader</th>
-						<th class="column2">Monster Stats</th>
-						<th class="column3">
+					<tr>
+						<td class="a1">Leader</td>
+						<td class="b1">Monster Stats</td>
+						<td class="c1">
 							<div class="left">LV</div>
 							<div class="right">[Reset Button]</div>
-						</th>
+						</td>
 					</tr>
 
 					<tr>
-						<td class="column1"></td>
-						<td class="column2"></td>
-						<td class="column3"></td>
+						<td class="a2" onclick="openOverlay(event)">Left click to<br>select monster.<br>- - - - - - -<br>Right click for<br>more info.</td>
+						<td class="b2">
+							<table>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>HP</td>
+										<td>ATK</td>
+										<td>RCV</td>
+									</tr>
+									<tr>
+										<td>Stats</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>+</td>
+										<td class="input">
+											<form>
+												<input type="text" name="hp_egg" value="99" maxlength="2" />
+												</form>
+											</form>
+										</td>
+										<td class="input">
+											<form>
+												<input type="text" name="atk_egg" value="99"/>
+												</form>
+											</form>
+										</td>
+										<td class="input">
+											<form>
+												<input type="text" name="rcv_egg" value="99"/>
+												</form>
+											</form>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="4" class="latentcell">Latent Awakenings</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<td class="c2"></td>
+					</tr>
+
+					<tr>
+						<td class="a1">Sub 1</td>
+						<td class="b1">Monster Stats</td>
+						<td class="c1">
+							<div class="left">LV</div>
+							<div class="right">[Reset Button]</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="a2">Left click to<br>select monster.<br>- - - - - - -<br>Right click for<br>more info.</td>
+						<td class="b2">
+							<table>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>HP</td>
+										<td>ATK</td>
+										<td>RCV</td>
+									</tr>
+									<tr>
+										<td>Stats</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>+</td>
+										<td class="input">99</td>
+										<td class="input">99</td>
+										<td class="input">99</td>
+									</tr>
+									<tr>
+										<td colspan="4" class="latentcell">Latent Awakenings</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<td class="c2">c</td>
+					</tr>
+
+					<tr>
+						<td class="a1">Sub 2</td>
+						<td class="b1">Monster Stats</td>
+						<td class="c1">
+							<div class="left">LV</div>
+							<div class="right">[Reset Button]</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="a2">Left click to<br>select monster.<br>- - - - - - -<br>Right click for<br>more info.</td>
+						<td class="b2">
+							<table>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>HP</td>
+										<td>ATK</td>
+										<td>RCV</td>
+									</tr>
+									<tr>
+										<td>Stats</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>+</td>
+										<td class="input">99</td>
+										<td class="input">99</td>
+										<td class="input">99</td>
+									</tr>
+									<tr>
+										<td colspan="4" class="latentcell">Latent Awakenings</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<td class="c2">c</td>
+					</tr>
+
+					<tr>
+						<td class="a1">Sub 3</td>
+						<td class="b1">Monster Stats</td>
+						<td class="c1">
+							<div class="left">LV</div>
+							<div class="right">[Reset Button]</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="a2">Left click to<br>select monster.<br>- - - - - - -<br>Right click for<br>more info.</td>
+						<td class="b2">
+							<table>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>HP</td>
+										<td>ATK</td>
+										<td>RCV</td>
+									</tr>
+									<tr>
+										<td>Stats</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>+</td>
+										<td class="input">99</td>
+										<td class="input">99</td>
+										<td class="input">99</td>
+									</tr>
+									<tr>
+										<td colspan="4" class="latentcell">Latent Awakenings</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<td class="c2">c</td>
+					</tr>
+
+					<tr>
+						<td class="a1">Sub 4</td>
+						<td class="b1">Monster Stats</td>
+						<td class="c1">
+							<div class="left">LV</div>
+							<div class="right">[Reset Button]</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="a2">Left click to<br>select monster.<br>- - - - - - -<br>Right click for<br>more info.</td>
+						<td class="b2">
+							<table>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>HP</td>
+										<td>ATK</td>
+										<td>RCV</td>
+									</tr>
+									<tr>
+										<td>Stats</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>+</td>
+										<td class="input">99</td>
+										<td class="input">99</td>
+										<td class="input">99</td>
+									</tr>
+									<tr>
+										<td colspan="4" class="latentcell">Latent Awakenings</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<td class="c2">c</td>
+					</tr>
+
+					<tr>
+						<td class="a1">Friend</td>
+						<td class="b1">Monster Stats</td>
+						<td class="c1">
+							<div class="left">LV</div>
+							<div class="right">[Reset Button]</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="a2">Left click to<br>select monster.<br>- - - - - - -<br>Right click for<br>more info.</td>
+						<td class="b2">
+							<table>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>HP</td>
+										<td>ATK</td>
+										<td>RCV</td>
+									</tr>
+									<tr>
+										<td>Stats</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>+</td>
+										<td class="input">99</td>
+										<td class="input">99</td>
+										<td class="input">99</td>
+									</tr>
+									<tr>
+										<td colspan="4" class="input">Latent Awakenings</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<td class="c2">c</td>
 					</tr>
 				</tbody>
-
 			</table>
+		</div>
+
+		<div id="searchOverlay">
+			<div>
+			</div>
 		</div>
 
 		<div id="selectTeamBtn"></div><!--

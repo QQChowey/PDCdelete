@@ -125,7 +125,9 @@ function handleSwitchClick(switch_team) {
 	}
 }
 
-
+function openOverlay(event) {
+	document.getElementById("searchOverlay").style.width = "550px";
+}
 
 
 
